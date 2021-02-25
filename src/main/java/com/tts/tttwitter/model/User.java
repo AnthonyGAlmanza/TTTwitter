@@ -34,7 +34,6 @@ public class User {
 	private Set<Role> roles;
 	
 	
-	
 	public User() {}
 
 	public User(Long id, String email, String username, String password, String firstName, String lastName, int active,
@@ -49,7 +48,6 @@ public class User {
 		this.active = active;
 		this.createdAt = createdAt;
 	}
-
 
 
 	public Long getId() {
