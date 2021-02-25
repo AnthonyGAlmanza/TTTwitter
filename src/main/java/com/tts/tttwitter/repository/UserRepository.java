@@ -1,5 +1,13 @@
 package com.tts.tttwitter.repository;
 
-public interface UserRepository {
+import org.springframework.stereotype.Repository;
 
+import com.tts.tttwitter.model.User;
+
+@Repository
+public interface UserRepository extends CrudRepository<User, Long> {
+	
+	User findByUsername(String username);
+	
+	
 }
